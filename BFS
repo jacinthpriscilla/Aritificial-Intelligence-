@@ -10,8 +10,6 @@ def bfs(graph, start):
             print(vertex, end=" ")
             visited.add(vertex)
             queue.extend(neighbor for neighbor in graph[vertex] if neighbor not in visited)
-
-# Example graph as an adjacency list
 graph = {
     'A': ['B', 'C'],
     'B': ['A', 'D', 'E'],
@@ -21,5 +19,4 @@ graph = {
     'F': ['C', 'E']
 }
 
-# Run BFS
 bfs(graph, 'A')
